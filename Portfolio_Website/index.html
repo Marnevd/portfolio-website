@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marne</title>
+    <link rel="shortcut icon" type="image/png" href="Images/marne.png">
+    <link href="css/Style.css" rel="stylesheet">
+    <script src="js/functions.js" defer></script>
+</head>
+<body id="body">
+    <header>
+        <div onclick="loadingSwitch()" class="loadingSwitch" id="loadingSwitch"></div>
+<!--        <section class="heroHome">-->
+<!--            <h1>Marne v. Delft</h1>-->
+<!--            <p>-->
+<!--                Dit is een pagina over mij.-->
+<!--            </p>-->
+<!--        </section>-->
+        <a name="nav"></a>
+        <nav>
+            <ul class="menuList">
+                <li class="listItem"><a href="index.html#nav" class="menuItem">Home</a></li>
+                <li class="listItem"><a href="hobby.html" class="menuItem">Hobby's</a></li>
+                <li class="listItem"><a href="projecten.html" class="menuItem">Projecten</a></li>
+                <li class="listItem"><a href="over-mij.html" class="menuItem">Over mij</a></li>
+                <li class="listItem"><a href="contact.html" class="menuItem">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="intro introHome">
+            <div class="introHomeText">
+                <section class="introHomeHeadText">
+                    <h2>Welkom</h2>
+                    <p>
+                        Hier komt info over de pagina. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </section>
+                <section class="introHomeP">
+                    <h3>Paragraaf</h3>
+                    <p>
+                        ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </section>
+                <section class="introHomeP">
+                    <h3>Paragraaf</h3>
+                    <p>
+                        ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </section>
+            </div>
+            <img class="introHomeImg" src="Images/intro.jpg" alt="name">
+        </div>
+        <div class="activateFun" onclick="activateFun()"></div>
+        <section class="sectionFunContainer" id="sectionFunContainer">
+            <div class="sectionFun pictureHome">
+                <h2>Wat kijkt Jeffrey?</h2>
+                <img src="Images/indian.png" id="imgChange" alt="Jeffrey">
+                <button onclick="changeImg()">Click me</button>
+            </div>
+            <div class="sectionFun magicBall">
+                <h2>Magic 8 Ball</h2>
+                <p>Stel een vraag en klik op de bal!</p>
+                <input type="text" id="question">
+                <div id="eightBall" class="eightBall">
+                    <div class="answer">
+                        <p id="eight">8</p>
+                        <p id="answer"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<!--    <footer>-->
+<!--        <a href="login.html" class="loginButton"></a>-->
+<!--        <ul class="footerList">-->
+<!--            <li class="footerListItem"><a href="/" class="footerLink"><img alt="linked in" src="Images/linkedInIcon.png"></a></li>-->
+<!--            <li class="footerListItem"><a href="https://www.instagram.com/marne.vd/" target="_blank" class="footerLink"><img alt="instagram" src="Images/instagramIcon.png"></a></li>-->
+<!--            <li class="footerListItem"><a href="index.html#nav" class="footerLink">Marne</a></li>-->
+<!--            <li class="footerListItem"><a href="mailto: wil.stemmers@outlook.com" target="_blank" class="footerLink"><img alt="e-mail" src="Images/mailIcon.png"></a></li>-->
+<!--            <li class="footerListItem"><a href="" class="footerLink"><img alt="twitter" src="Images/twitterIcon.png"></a></li>-->
+<!--        </ul>-->
+<!--        <a href="#nav" class="arrowUp">/\</a>-->
+<!--    </footer>-->
+</body>
+</html>

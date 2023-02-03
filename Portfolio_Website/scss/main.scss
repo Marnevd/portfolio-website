@@ -1,0 +1,226 @@
+main{
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 50px;
+
+  .intro{
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #3C2A21;
+    box-shadow: var(--schadowSections);
+
+    .pageTitle{
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+
+  .introHome{
+    display: flex;
+    justify-content: space-between;
+
+    .introHomeText{
+      width: calc(60% - 20px);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .introHomeP{
+        width: calc(50% - 20px);
+      }
+    }
+    .introHomeImg{
+      width: calc(40% - 20px);
+      height: auto;
+    }
+  }
+
+  .introHobby{
+
+    .introHobbyList{
+      padding: 0;
+      text-align: center;
+
+    }
+
+    .introHobbyListItem{
+      background-color: #D5CEA3;
+      color: #333333;
+      display: inline;
+      list-style: none;
+      margin: 0 10px;
+      padding: 5px 20px;
+      cursor: pointer;
+    }
+    .introHobbyListItem:hover{
+      background-color: #9a936b;
+      color: #ffffff;
+    }
+
+    .introHobbySections{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .introHobbyText{
+        width: calc(70% - 20px);
+        display: none;
+
+      }
+      #section1, #sectionImg1{
+        display: block;
+      }
+      .introHobbyImg{
+        width: calc(30% - 20px);
+        display: none;
+      }
+    }
+
+  }
+
+  .introProjecten{
+
+    .sectionProjects{
+      display: flex;
+      flex-flow: column;
+
+      .overlayProjects {
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9;
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+
+
+      .sectionProject{
+        //width: 30%;
+
+        .projectTitle{
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+
+          h3{
+            margin-bottom: 0;
+          }
+        }
+
+        p{
+          width: 60%;
+        }
+
+        .imgLogo{
+          background-color: white;
+          height: 100px;
+        }
+
+        .sectionImages{
+          display: flex;
+          justify-content: flex-start;
+          gap: 20px;
+          flex-wrap: wrap;
+
+          .imgWebsiteContainer{
+            cursor: pointer;
+
+            .imgWebsite{
+              width: 28vw;
+              min-width: 500px;
+              height: 260px;
+            }
+          }
+
+          .imgWebsiteContainerPopUp {
+            display: none;
+          }
+
+          .popUpActive {
+            display: block !important;
+            z-index: 10;
+            width: 70vw;
+            //height: 550px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .imgWebsite {
+              width: 70vw;
+              //height: 450px;
+            }
+
+            .closePopUp {
+              z-index: 11;
+              font-size: 30px;
+              cursor: pointer;
+              position: absolute;
+              top: 8px;
+              right: 16px;
+              color: #a5a5a5;
+            }
+          }
+
+        }
+
+      }
+    }
+  }
+
+  .introOverMij{
+    .introOverMijSections{
+      display: flex;
+      justify-content: space-between;
+      .introOverMijSectionsMain{
+        width: calc(80% - 20px);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .introOverMijHeadText{
+          width: 100%;
+        }
+        .introOverMijP{
+          width: calc(50% - 20px)
+        }
+      }
+      .introOverMijSidebar{
+        width: calc(20% - 20px);
+      }
+    }
+  }
+
+  .introLogin{
+    width: 50%;
+    padding: 0;
+    margin: 40px 25%;
+
+    .loginForm{
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      row-gap: 20px;
+      margin-bottom: 40px;
+
+      .loginFormLabel{
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .introContact{
+
+    .contactIcons {
+      text-decoration: none;
+      color: white;
+
+      img{
+        height: 40px;
+      }
+    }
+  }
+}

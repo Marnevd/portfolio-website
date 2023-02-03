@@ -1,0 +1,66 @@
+header {
+  .navLoginImg{
+    width: 40px;
+    margin: 30px;
+  }
+
+  nav{
+    .menuList{
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      column-gap: 20px;
+
+      .listItem{
+        list-style: none;
+        margin: 0;
+
+        .menuItem{
+          font-size: 30px;
+          color: #E5E5CB;
+          text-decoration: none;
+          padding: 10px;
+
+          .navHomeImg{
+            height: 32px;
+          }
+        }
+        .menuItem:hover{
+          color: lightgray;
+          text-shadow:
+                  0 0 7px #000,
+                  0 0 10px #000,
+                  0 0 21px #000;
+
+        }
+      }
+    }
+  }
+
+  .heroHome {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    row-gap: 40px;
+    background-image: url("../Images/background.jpg");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+
+    h1 {
+      margin: 0;
+      font-size: 100px;
+      top: 200px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 30px;
+      top: 150px;
+    }
+  }
+}
